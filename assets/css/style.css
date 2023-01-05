@@ -1,0 +1,80 @@
+body{
+  background: linear-gradient(120deg, #FFFFFF 0%, #FF006B 100%), linear-gradient(235deg, #FFFFFF 0%, #FF006B 100%), linear-gradient(235deg, #FFFFFF 0%, #000000 100%), linear-gradient(90deg, #FFE037 0%, #FFE037 40%, #1DCD9F 40%, #1DCD9F 50%, #088C6F 50%, #088C6F 70%, #23033C 70%, #23033C 100%);
+background-blend-mode: overlay, overlay, overlay, normal;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+}
+
+#container{
+  text-align: left;
+  padding: 1px;
+  margin: 5px;
+}
+#container h1{
+  font-size: 50px;
+  font-family:fantasy;
+}
+#container p{
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#form{
+  width: 350px;
+  margin: 2vh ;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+#form h2{
+  text-align: center;   
+}
+form h3{
+  font-size: 15px;
+  color: red;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.input-control{
+  display: flex;
+  flex-direction: column;
+}
+.input-control label{
+  font-size: 20px;
+}
+.input-control input{
+  border: 2px solid #be412b;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 90%;
+  margin: 5px;
+}
+
+.input-control input:focus{
+  outline: 0;
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background-color:rgb(0, 0, 0);
+  color: #FFFFFF;
+}
+button:hover{
+  background-color: #1DCD9F;
+}
+
+#contenedor{
+  display: flex;
+}   /*Poner contenedores de div de lado a lado*/
+
+#clone{
+  margin: 200px;
+}
