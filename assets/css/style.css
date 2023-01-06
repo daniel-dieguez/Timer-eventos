@@ -23,11 +23,16 @@ min-height: 100vh;
 
 #form{
   width: 350px;
+  height: 380px;
   margin: 2vh ;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 4px;
   font-size: 20px;
+}
+
+#form p {
+  color: red;
 }
 
 #form h2{
@@ -77,4 +82,16 @@ button:hover{
 
 #clone{
   margin: 200px;
+}
+
+#clone p{
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10%;
+  width: 200px;
+  height: 10px;
+  text-size:10px;
+  text-align: center;
+
 }
