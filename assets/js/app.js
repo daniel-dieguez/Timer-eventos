@@ -1,31 +1,41 @@
-const formulario = document.getElementById("evento");
-const fecha = document.getElementById("date");
-const btnenviar = document.getElementById("btnEnviar");
+const input = document.getElementById("evento");
+const btn = document.getElementById("btnEnviar");
+const ul = document.querySelector("ul");
 const vacio = document.getElementById("nada");
-const nuevo = document.createElement("p");
-const button = document.createElement('button');
 
-btnenviar.addEventListener("click", anadir);
-
-function anadir() {
+btn.addEventListener("click", (e) => {
   event.preventDefault();
-      nuevo.innerHTML = formulario.value;
-      const aqui = document.getElementById("aquiso");
+  const texto = input.value;
 
-      aqui.appendChild(nuevo); /*Esto lo hicimo para mete a button dentro de p*/
-      nuevo.appendChild(button);
-      vacio.style.display = "none";
-      form.reset();
-};
+  if (texto !== "") {
+    const li = document.createElement("li");
+    const p = document.createElement("p");
+    p.innerHTML = texto;
 
-function boton (){
+    li.appendChild(p);
+    li.appendChild(btdelete());
+    ul.appendChild(li);
 
+    form.reset();
+    vacio.style.display = "none";
+    console.log('elemento creado');
+  }
+});
 
-}
+function btdelete() {
+  const btndelete = document.createElement("button");
+  btndelete.innerHTML = "x";
 
+  btndelete.addEventListener("click", (e) => {
+    const item = e.target.parentElement;
+    ul.removeChild(item);
 
-  button.addEventListener('click',()=>{
-    console.log('hola')
-    const quitar = document.getElementById('aquiso');
-    quitar.removeChild(nuevo);
+    const items = document.querySelectorAll( 'li');
+
+    if (items.length === 0){
+      vacio.style.display = 'block';
+    }
+  console.log('elemento eliminado');
   });
+  return btndelete;
+}

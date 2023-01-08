@@ -6,6 +6,11 @@ background-size: cover;
 min-height: 100vh;
 }
 
+ ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+
 #container{
   text-align: left;
   padding: 1px;
@@ -65,14 +70,14 @@ form h3{
   outline: 0;
 }
 
-button{
+#btnEnviar{
   width: 100%;
   height: 50px;
   border: 1px solid;
   background-color:rgb(0, 0, 0);
   color: #FFFFFF;
 }
-button:hover{
+#btnEnviar:hover{
   background-color: #1DCD9F;
 }
 
@@ -82,6 +87,8 @@ button:hover{
 
 #clone{
   margin: 200px;
+  overflow: hidden;
+  display: flex;
 }
 
 #clone p{
@@ -91,7 +98,20 @@ button:hover{
   padding: 10%;
   width: 200px;
   height: 10px;
-  text-size:10px;
+  font-size: 10px;
   text-align: center;
 
+}
+
+#clone button{
+  float: right;
+  display: flex;
+  background-color: #1DCD9F;
+  border-radius: 5px;
+
+}
+
+#clone button:hover{
+  color: #000000;
+  background-color: #FFFFFF;
 }
