@@ -2,15 +2,19 @@ const input = document.getElementById("evento");
 const btn = document.getElementById("btnEnviar");
 const ul = document.querySelector("ul");
 const vacio = document.getElementById("nada");
+const datee = document.getElementById('date');
+
 
 btn.addEventListener("click", (e) => {
   event.preventDefault();
   const texto = input.value;
+  const dia = datee.value;
 
-  if (texto !== "") {
+
+  if (texto !== ""){
     const li = document.createElement("li");
     const p = document.createElement("p");
-    p.innerHTML = texto;
+    p.innerHTML = `${texto} ${dia} `;
 
     li.appendChild(p);
     li.appendChild(btdelete());
@@ -21,6 +25,7 @@ btn.addEventListener("click", (e) => {
     console.log('elemento creado');
   }
 });
+
 
 function btdelete() {
   const btndelete = document.createElement("button");

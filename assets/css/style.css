@@ -86,32 +86,44 @@ form h3{
 }   /*Poner contenedores de div de lado a lado*/
 
 #clone{
-  margin: 200px;
-  overflow: hidden;
-  display: flex;
+   display: flex;
 }
 
 #clone p{
   background-color: #FFFFFF;
-  border-radius: 5px;
-  margin: 20px;
+  border-radius: 1px;
+  margin: -15px;
   padding: 10%;
-  width: 200px;
-  height: 10px;
-  font-size: 10px;
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
   text-align: center;
 
+
+}
+
+#clone li  {
+  display: flex;
+  height: 110px;
+  float: left;
+  align-items: center;
+  padding: 5px;
+  
+  
 }
 
 #clone button{
   float: right;
-  display: flex;
-  background-color: #1DCD9F;
+  background-color: #ac870e;
   border-radius: 5px;
+  color: white;
+  float: left;
+  height:84px;
+  border-style: none;
 
 }
 
 #clone button:hover{
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #f8eeee;
+  background-color: #e21414;
 }
